@@ -1,8 +1,20 @@
 :root {
-	--white: #fff;
+	--white: #f5f5f1;
+	--red: #e50914;
+	--red-light: #f40612;
+	--red-dark: #bb0a12;
+	--black: #221f1f;
+	--transition: 0.15s;
 }
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	transition: var(--transition);
+}
+svg {
+	height: 100%;
+	width: auto;
+	color: inherit;
 }

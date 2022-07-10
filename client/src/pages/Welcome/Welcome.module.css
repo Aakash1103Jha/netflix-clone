@@ -1,18 +1,27 @@
 .welcome {
-	background: #111;
-	min-height: 100vh;
+	background: var(--black);
+	height: 100vh;
+}
+.logo {
+	height: 3rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	z-index: 10;
 }
 .welcome_hero {
 	width: 100%;
+	height: 100%;
 	position: relative;
 	overflow: hidden;
 }
 .welcome_hero_img {
 	width: inherit;
-	height: 75vh;
+	height: 100%;
 	object-fit: cover;
 	object-position: center;
-	filter: contrast(110%) blur(2px);
+	filter: contrast(105%) blur(1px);
+	-webkit-filter: contrast(105%) blur(1px);
 	overflow: hidden;
 }
 .welcome_hero_content {
@@ -25,9 +34,15 @@
 	transform: translate(-50%, -50%);
 	text-align: center;
 	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .welcome_hero_content h1 {
-	font-size: calc(5rem + 0.1vmin);
+	max-width: 90%;
+	font-size: calc(4rem + 0.1vmin);
+	font-weight: 500;
 }
 .welcome_hero_content h2 {
 	font-weight: 500;
@@ -39,24 +54,32 @@
 .welcome_hero_cta {
 	display: flex;
 	margin: 1.5rem auto 0rem auto;
+	width: 100%;
 }
 .welcome_hero_cta,
 .welcome_hero_cta_input,
 .welcome_hero_cta_btn {
 	border: none;
 }
-.welcome_hero_cta_input {
-	padding: 1.8rem 1rem;
-	width: 100%;
-}
 .welcome_hero_cta_input:focus,
 .welcome_hero_cta_input:active {
 	outline: 0.5px solid skyblue;
 }
+.welcome_hero_cta_input {
+	padding: 1.5rem 1rem;
+	flex: 1.4;
+}
 .welcome_hero_cta_btn {
 	cursor: pointer;
-	min-width: 15rem;
-	background: red;
+	flex: 0.6;
+	background: var(--red);
 	color: white;
-	font-size: calc(1.5rem + 0.1vmin);
+	font-size: calc(1.1rem + 0.1vmin);
+	padding: 0rem 1rem;
+}
+.welcome_hero_cta_btn:hover {
+	background: var(--red-light);
+}
+.welcome_hero_cta_btn:active {
+	background: var(--red-dark);
 }

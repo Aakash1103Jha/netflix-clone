@@ -3,10 +3,14 @@ import { type FC } from "react";
 import styles from "./Welcome.module.css";
 
 import HERO_BANNER from "../../assets/images/bg_landing.jpeg";
+import { ReactComponent as NETFLIX_LOGO } from "../../assets/svg/netflix-logo.svg";
 
 const Welcome: FC = () => {
 	return (
 		<div className={`${styles.welcome}`}>
+			<div className={`${styles.logo}`}>
+				<NETFLIX_LOGO />
+			</div>
 			<div className={`${styles.welcome_hero}`}>
 				<img
 					className={`${styles.welcome_hero_img}`}
