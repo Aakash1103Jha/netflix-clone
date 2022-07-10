@@ -3,12 +3,30 @@
 	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0, transparent 60%, rgba(0, 0, 0, 0.2));
 	height: 100vh;
 }
-.logo {
-	height: 3rem;
+.welcome_header {
 	position: absolute;
-	top: 1rem;
-	left: 1rem;
+	top: 1.5rem;
+	left: 0rem;
+	right: 0rem;
+	height: 4rem;
 	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0rem 1.5rem;
+}
+.welcome_header_cta_btn {
+	position: relative;
+	height: 100%;
+	padding: 0.8rem 0rem;
+}
+.welcome_header_btn {
+	height: 100%;
+	border-radius: var(--radius-sm);
+}
+.logo {
+	position: relative;
+	height: 3rem;
 }
 .welcome_hero {
 	width: 100%;
@@ -25,7 +43,7 @@
 	overflow: hidden;
 }
 .welcome_hero_content {
-	padding: 1rem;
+	padding: 1.5rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -65,7 +83,6 @@
 	outline: 0.5px solid skyblue;
 }
 .welcome_hero_cta_input {
-	/* padding: 1.5rem 1rem; */
 	flex: 1.4;
 }
 .welcome_hero_cta_btn {
@@ -73,7 +90,6 @@
 	flex: 0.6;
 	background: var(--red);
 	color: white;
-	/* font-size: calc(1.1rem + 0.1vmin); */
 	padding: 0rem 1rem;
 }
 .welcome_hero_cta_btn:hover {
@@ -81,4 +97,9 @@
 }
 .welcome_hero_cta_btn:active {
 	background: var(--red-dark);
+}
+@media screen and (min-width: 1023px) {
+	.logo {
+		height: inherit;
+	}
 }
