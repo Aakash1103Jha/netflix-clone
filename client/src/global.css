@@ -5,6 +5,7 @@
 	--red-dark: #bb0a12;
 	--black: #221f1f;
 	--transition: 0.15s;
+	--radius-sm: 0.2rem;
 }
 * {
 	padding: 0;
@@ -20,6 +21,9 @@ svg {
 }
 input {
 	border-radius: 0;
+}
+button {
+	font-weight: 300;
 }
 @media screen and (min-width: 300px) {
 	h1 {

@@ -4,15 +4,25 @@ import styles from "./Welcome.module.css";
 
 import HERO_BANNER from "../../assets/images/bg_landing.jpeg";
 import { ReactComponent as NETFLIX_LOGO } from "../../assets/svg/netflix-2.svg";
+import { NavLink } from "react-router-dom";
 
 const Welcome: FC = () => {
 	const [email, setEmail] = useState("");
 
 	return (
 		<div className={`${styles.welcome}`}>
-			<div className={`${styles.logo}`}>
-				<NETFLIX_LOGO />
-			</div>
+			<header className={`${styles.welcome_header}`}>
+				<div className={`${styles.logo}`}>
+					<NETFLIX_LOGO />
+				</div>
+				<div className={`${styles.welcome_header_cta_btn}`}>
+					<NavLink to="/sign_in">
+						<button className={`${styles.welcome_hero_cta_btn} ${styles.welcome_header_btn}`}>
+							Sign In
+						</button>
+					</NavLink>
+				</div>
+			</header>
 			<div className={`${styles.welcome_hero}`}>
 				<img
 					className={`${styles.welcome_hero_img}`}
