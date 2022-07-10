@@ -1,4 +1,4 @@
-import { type FC } from "react";
+import { useState, type FC } from "react";
 
 import styles from "./Welcome.module.css";
 
@@ -6,6 +6,8 @@ import HERO_BANNER from "../../assets/images/bg_landing.jpeg";
 import { ReactComponent as NETFLIX_LOGO } from "../../assets/svg/netflix-logo.svg";
 
 const Welcome: FC = () => {
+	const [email, setEmail] = useState("");
+
 	return (
 		<div className={`${styles.welcome}`}>
 			<div className={`${styles.logo}`}>
@@ -27,6 +29,8 @@ const Welcome: FC = () => {
 							type="email"
 							placeholder="Email address"
 							required={true}
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
 						/>
 						<button className={`${styles.welcome_hero_cta_btn}`}>Get Started</button>
 					</div>

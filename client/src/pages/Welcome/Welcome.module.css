@@ -1,3 +1,5 @@
+/* TODO: Write @media queries for to make UI mobile ready */
+
 .welcome {
 	background: var(--black);
 	height: 100vh;
