@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 import App from "./App";
@@ -9,7 +10,11 @@ import "./global.css";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
 	<React.StrictMode>
-		<App />
+		<BrowserRouter
+			key="__root_router__"
+			children={<App />}
+			basename="/"
+		/>
 	</React.StrictMode>
 );
 

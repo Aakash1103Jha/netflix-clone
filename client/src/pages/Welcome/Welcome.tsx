@@ -3,7 +3,7 @@ import { useState, type FC } from "react";
 import styles from "./Welcome.module.css";
 
 import HERO_BANNER from "../../assets/images/bg_landing.jpeg";
-import { ReactComponent as NETFLIX_LOGO } from "../../assets/svg/netflix-logo.svg";
+import { ReactComponent as NETFLIX_LOGO } from "../../assets/svg/netflix-2.svg";
 
 const Welcome: FC = () => {
 	const [email, setEmail] = useState("");

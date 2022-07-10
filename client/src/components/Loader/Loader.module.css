@@ -1,0 +1,29 @@
+.loader_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
+.loader {
+	height: fit-content;
+	animation: animateLoader infinite 2s;
+}
+@keyframes animateLoader {
+	0% {
+		scale: 1;
+	}
+	50% {
+		scale: 1.5;
+	}
+	100% {
+		scale: 1;
+	}
+}

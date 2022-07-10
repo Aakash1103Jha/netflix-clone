@@ -18,3 +18,40 @@ svg {
 	width: auto;
 	color: inherit;
 }
+input {
+	border-radius: 0;
+}
+@media screen and (min-width: 300px) {
+	h1 {
+		font-size: calc(2rem + 0.1vmin);
+	}
+	h2 {
+		font-size: calc(1.2rem + 0.1vmin);
+	}
+	p {
+		font-size: calc(1rem + 0.1vmin);
+	}
+	button {
+		font-size: calc(0.8rem + 0.1vmin);
+	}
+	input {
+		padding: calc(1rem + 0.5vmin);
+	}
+}
+@media screen and (min-width: 600px) {
+	h1 {
+		font-size: calc(3.5rem + 0.1vmin);
+	}
+	h2 {
+		font-size: calc(1.8rem + 0.1vmin);
+	}
+	p {
+		font-size: calc(1rem + 0.1vmin);
+	}
+	button {
+		font-size: calc(0.9rem + 0.1vmin);
+	}
+	input {
+		padding: calc(1.2rem + 0.5vmin);
+	}
+}
