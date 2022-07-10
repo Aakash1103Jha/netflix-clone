@@ -9,6 +9,5 @@ The user interface of Netflix that we see might look simple and minimal but to g
 -   CSS Module
 -   Firebase Hosting
 
-```
-This project is only for learning purpose. The Netflix service, including all content provided on the Netflix service, is protected by copyright, trade secret or other intellectual property laws and treaties. Netflix is a registered trademark of Netflix, Inc.
-```
+
+**This project is only for learning purpose.** _The Netflix service, including all content provided on the Netflix service, is protected by copyright, trade secret or other intellectual property laws and treaties. Netflix is a registered trademark of Netflix, Inc._
