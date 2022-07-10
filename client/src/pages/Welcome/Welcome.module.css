@@ -1,0 +1,62 @@
+.welcome {
+	background: #111;
+	min-height: 100vh;
+}
+.welcome_hero {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.welcome_hero_img {
+	width: inherit;
+	height: 75vh;
+	object-fit: cover;
+	object-position: center;
+	filter: contrast(110%) blur(2px);
+	overflow: hidden;
+}
+.welcome_hero_content {
+	padding: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	max-width: 60rem;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: var(--white);
+}
+.welcome_hero_content h1 {
+	font-size: calc(5rem + 0.1vmin);
+}
+.welcome_hero_content h2 {
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+.welcome_hero_content p {
+	font-size: 1.1rem;
+}
+.welcome_hero_cta {
+	display: flex;
+	margin: 1.5rem auto 0rem auto;
+}
+.welcome_hero_cta,
+.welcome_hero_cta_input,
+.welcome_hero_cta_btn {
+	border: none;
+}
+.welcome_hero_cta_input {
+	padding: 1.8rem 1rem;
+	width: 100%;
+}
+.welcome_hero_cta_input:focus,
+.welcome_hero_cta_input:active {
+	outline: 0.5px solid skyblue;
+}
+.welcome_hero_cta_btn {
+	cursor: pointer;
+	min-width: 15rem;
+	background: red;
+	color: white;
+	font-size: calc(1.5rem + 0.1vmin);
+}
